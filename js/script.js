@@ -165,6 +165,12 @@ sCart.addEventListener("click", () => {
   cart.classList.toggle("active");
 });
 
+document.addEventListener("click", (e) => {
+  if (!sCart.contains(e.target) && !cart.contains(e.target)) {
+    cart.classList.remove("active");
+  }
+});
+
 // * Navbar Toogle
 hamburgerMenu.addEventListener("click", () => {
   navbar.classList.toggle("active");
