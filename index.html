@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LStore</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <header class="navbar">
+      <a href="#" class="navbar-logo-title">L<span>Store</span></a>
+      <nav class="navbar-nav">
+        <a href="#">Beranda</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#product">Produk</a>
+        <a href="#contact">Kontak Kami</a>
+      </nav>
+      <div class="navbar-cart">
+        <h4>Belanja Saya</h4>
+        <div class="pUser" id="pUser"></div>
+        <div class="pembayaran">
+          <p>Total Harga Rp.<span id="total">00</span></p>
+          <form action="" method="post" id="formBayar">
+            <input type="text" id="namaUser" placeholder="Masukkan nama kamu..." required />
+            <input type="number" id="nominal" placeholder="Tuliskan uang bayar..." required />
+            <button type="submit">Bayar</button>
+          </form>
+        </div>
+      </div>
+      <div class="navbar-right">
+        <button id="shopping_cart" type="button">
+          <i class="material-icons">shopping_cart</i>
+        </button>
+        <button id="menu" type="button"><i class="material-icons">menu</i></button>
+      </div>
+    </header>
+    <!-- Navbar End -->
+
+    <!-- Main Start -->
+    <main>
+      <!-- Beranda Start -->
+      <section class="beranda">
+        <div class="beranda-content">
+          <h1>LStore 💻</h1>
+          <p>
+            Temukan laptop impian Anda di LStore! Mulai dari gaming, office, hingga standar — semua
+            berkualitas, bergaransi resmi, dan harga bersaing. Belanja mudah, puas pasti!
+          </p>
+        </div>
+      </section>
+      <!-- Beranda End -->
+
+      <!-- Tentang Kami Start -->
+      <section id="about" class="tentangkami">
+        <div class="tentangkami-content">
+          <h2>Tentang Kami</h2>
+          <p>
+            LStore adalah perusahaan retail yang berfokus pada penjualan berbagai jenis laptop dari
+            merek-merek ternama seperti ASUS, Acer, Lenovo, HP, MSI, dan lainnya. Kami bukan
+            produsen, melainkan reseller resmi yang menghadirkan beragam pilihan laptop untuk
+            memenuhi kebutuhan pengguna di segala bidang—mulai dari laptop gaming berperforma
+            tinggi, laptop office yang efisien dan ringan, hingga laptop standar yang cocok untuk
+            pelajar maupun pemakaian harian. Dengan koleksi produk yang terus diperbarui dan layanan
+            yang ramah, kami berkomitmen membantu setiap pelanggan menemukan perangkat terbaik
+            sesuai kebutuhan dan anggaran mereka.
+          </p>
+          <p>
+            Sebagai mitra terpercaya dalam pembelian laptop, LStore menyediakan garansi resmi,
+            dukungan teknis profesional, serta kemudahan dalam bertransaksi—baik secara online
+            maupun offline. Kami memahami bahwa setiap pelanggan memiliki kebutuhan berbeda, karena
+            itu kami siap memberikan panduan dan rekomendasi terbaik agar pengalaman belanja Anda
+            nyaman, aman, dan memuaskan. LStore hadir bukan hanya sebagai toko, tapi sebagai solusi
+            lengkap dalam dunia perangkat komputasi.
+          </p>
+        </div>
+      </section>
+      <!-- Tentang Kami End -->
+
+      <!-- Produk + Kategori Start -->
+      <section id="product" class="produk">
+        <h2>Produk</h2>
+        <div class="produk-pilihan-kategori">
+          <select id="kategori">
+            <option value="">Pilih Kategori</option>
+            <option value="gaming">Gaming</option>
+            <option value="office">Office</option>
+            <option value="standar">Standar</option>
+          </select>
+        </div>
+        <div class="produk-box-item" id="produk-box-item"></div>
+      </section>
+      <!-- Produk + Kategori End -->
+
+      <!-- Kontak Kami Start -->
+      <section id="contact" class="kontak">
+        <h2>Kontak Kami</h2>
+        <div class="kontak-content">
+          <form action="" method="post" id="formKontak">
+            <input type="text" id="name" placeholder="Masukkan Nama Kamu..." required />
+            <input type="email" id="email" placeholder="Masukkan Email Kamu..." required />
+            <textarea
+              id="pesan"
+              placeholder="Masukkan Pesan Disini..."
+              cols="30"
+              rows="10"
+              required
+            ></textarea>
+            <button type="submit">Kirim</button>
+          </form>
+        </div>
+      </section>
+      <!-- Kontak Kami End -->
+    </main>
+    <!-- Main Start -->
+
+    <!-- Footer Start -->
+    <footer class="footer">
+      <div class="navigasi">
+        <a href="#">Beranda</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#product">Produk</a>
+        <a href="#contact">Kontak Kami</a>
+      </div>
+      <div class="sosial-media">
+        <a href="https://instagram.com/ardivannrr?igsh=MTd3NHV1dHNqa25rNQ==" target="_blank"
+          >Instagram</a
+        >
+        <a href="https://github.com/ardivandev" target="_blank">Github</a>
+      </div>
+      <p>@Copyright &copy; 2025 : Ardivan Nur Raihan Rahman</p>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Javascript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
